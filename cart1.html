@@ -1,0 +1,115 @@
+<html lang="min">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport " content="width=device-width, initial-scale=1.0">
+        <script src ="https://kit.fontawesome.com/1147679ae7.js"crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="mainstyle.css">
+        <title>DatSaiGon</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="home.html">
+                <img src="image/logo.png">
+                </a>
+            </div>
+            
+            <div class="others">
+                <div class="container-1">
+                    <span class="icon"><i class="fa fa-search"></i></span>
+                        <input placeholder="Search..." type="search" id="seacher"/>
+                     </div>
+                
+                <a href="category.html"><i class="fas fa-tags"></i></a>
+                
+                <a href="login.html"><i class="fas fa-user"></i></a>
+                <a href="cart1.html"><i class="fas fa-shopping-cart"></i></a>
+            </div> 
+        </header>
+<!----------------------------cart-->        
+    <section class="cart">
+        <div class="container">
+            <div class="cart-top-wrap">
+        <div class="cart-top">
+        <div class="cart-top-cart cart-top-item">
+        <i class= "fas fa-shopping-cart"></i>
+        </div> 
+        <div class="cart-top-adress cart-top-item">
+            <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <div class="cart-top-payment cart-top-item">
+        <i class="fas fa-money-check-alt"></i> 
+        </div> 
+        </div> 
+        </div> 
+        </div>
+        <div class="container">
+        <div class="cart-content row">
+        <div class="cart-content-left"> 
+        <table>
+            <tr>
+                <th>Sản Phẩm</th> 
+                <th>Tên Sản Phẩm</th> 
+                <th>Màu</th> 
+                <th>Size</th>
+                <th>Số Lượng</th>
+                <th>Thành Tiền</th>
+                <th>Xóa</th> 
+            </tr>
+            <div id="product-list">
+        <tr>
+            <td><img src="image/1.jpg" alt=""></td>
+            <td><p>ALBUM DISS NHAU</p><td>    
+            <td><img src="" alt=""></td>
+            <td><p>L</p></td>
+            <td><input type="number" value="1" min="1"></td>
+            <td><p>389.000 <sup>đ</sup></p></td> 
+            <td><span>X</span></td>
+        </tr>  
+        <tr>
+            <td><img src="image/2.jpg" alt=""></td>
+            <td><p>ALBUM THU ĐÔNG </p><td>    
+            <td><img src="" alt=""></td>
+            <td><p>L</p></td>
+            <td><input type="number" value="1" min="1"></td>
+            <td><p>489.000 <sup>đ</sup></p></td> 
+            <td><span>X</span></td>
+        </tr>
+        </table>
+        </div> 
+        <div class="cart-content-right">     
+        <table> 
+            <tr>
+                <th colspan="2">TỔNG TIỀN GIỎ HÀNG</th>
+            </tr>
+            <tr>
+                <td>TỔNG SẢN PHẨM</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>TỔNG TIỀN HÀNG</td>
+                <td><p>878.000<sup>đ</sup></p></td>
+            </tr>
+            <tr>
+                <td>TẠM TÍNH</td>
+                <td><p style="color:black; font-weight: bold;">878.000 <sup>đ</sup></p></td>
+            </tr>
+        </table>
+        <div class="cart-content-right-text">
+            <p>Bạn sẽ được miền phí ship khi đơn hàng của bạn có tổng giá trị trên 2.000.000 đ</p>
+            <p style="color:red; font-weight: boid;">Mua thêm<span style="font-size: 18px;">1.120.000đ</span>để được miễn ship</p>
+        </div>
+        <div class="cart-content-right-button">
+        <button>TIẾP TỤC MUA SẮM</button>
+        <button>THANH TOÁN</button>
+        </div>
+        <div class="cart-content-right-dangnhap">
+            <p>TÀI KHOẢN IVY</p> <br>
+            <P>Hãy<a href="login.html">Đăng nhập</a>tài khoản của bạn để tích điểm thành viên</P>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <script src="cart.js"></script>

@@ -1,0 +1,114 @@
+<html lang="min">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport " content="width=device-width, initial-scale=1.0">
+        <script src ="https://kit.fontawesome.com/1147679ae7.js"crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="mainstyle.css">
+        <title>DatSaiGon</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="home.html">
+                <img src="image/logo.png">
+                </a>
+            </div>
+            
+            <div class="others">
+                <div class="container-1">
+                    <span class="icon"><i class="fa fa-search"></i></span>
+                        <input placeholder="Search..." type="search" id="seacher"/>
+                     </div>
+                
+                <a href="category.html"><i class="fas fa-tags"></i></a>
+                
+                <a href="login.html"><i class="fas fa-user"></i></a>
+                <a href="cart1.html"><i class="fas fa-shopping-cart"></i></a>
+            </div> 
+        </header>
+        <section id="slider">
+            <div class="aspect-ratio-169">
+                <img src="https://phunuvietnam.mediacdn.vn/thumb_w/700/179072216278405120/2023/6/26/photo2023-06-26-120717-16877560500271925219001-111-0-644-853-crop-1687756061689744587260.jpeg">
+                <img src="http://kenh14cdn.com/2019/3/31/5575988626236220509848158093915519133941760o-1554049535201395732580-crop-15540495450361121566530.jpg">
+                <img src="https://hoso.wiki/wp-content/uploads/2020/05/den-vau.jpg">
+                <img src="https://static.yeah1music.net/uploads/33/2019/06/04/5cf5d88435eb0.jpg">
+              </div>
+              <div class="dot-container">
+                <div class="dot mau"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+        </section>
+              
+        <!---------------------footer-->
+<section class="app-container">
+    <p>Tải Ứng Dụng </p>
+    <div class="app-google">
+        <img src ="https://pubcdn.ivymoda.com/ivy2/images/appstore.png">
+        <img src ="https://pubcdn.ivymoda.com/ivy2/images/googleplay.png">
+        <a href="https://www.facebook.com/profile.php?id=100018108725524">
+        <img src="https://giayphepvantai.vn/wp-content/uploads/2017/07/Bieu-tuong-Facebook.png">
+        </a>
+    </div>
+    <p> Nhận Thông Tin Của Chúng Tôi </p>
+    <input type="text" placeholder="Nhập email của bạn....">
+</section>
+<div class="lienhe">
+    <li><a href = "" ><img src ="https://pubcdn.ivymoda.com/ivy2/images/img-congthuong.png" alt=""></a> </li>
+    <li><a href = ""></a>Liên Hệ</li>
+    <li><a href = ""></a>Quảng Cáo </li>
+    <li><a href = ""></a>Tuyển Dụng </li>
+    <li>
+        <a href="" class="https://cdn-icons-png.flaticon.com/128/2920/2920043.png"></a>
+        <a href="" class="https://pubcdn.ivymoda.com/ivy2/images/ic_gg.svg"></a>
+        <a href="" class="https://pubcdn.ivymoda.com/ivy2/images/ic_pinterest.svg"></a>
+    </li> -->
+    <div class="lienhe2">
+    <p> Công Ty Tứ Đại Thiên Vương Entertaimen <br>
+        Địa Chỉ : 20 Cộng Hòa, Quận Tân Bình, TP.HCM, Việt Nam <br>
+        Đặt Hàng Online : <span>0337460359</span>
+</div>
+    </div>
+
+</body>
+<script>
+const  header= document.querySelector("header")
+window.addEventListener("scroll",function(){
+    x= window.pageYOffset
+    if(x>0){
+
+    }
+    else{
+        header.classList.remove("stick")
+    }
+})
+
+
+const imgPosition = document.querySelectorAll(".aspect-ratio-169 img")
+const imgcontainer = document.querySelector('.aspect-ratio-169')
+const dotItem = document.querySelectorAll(".dot")
+let imgNuber = imgPosition.length
+let index = 0
+imgPosition.forEach(function(image,index){
+    image.style.left=index*100 + "%"
+    dotItem[index].addEventListener("click",function(){
+        slider (index)
+})
+})
+function imgslide (){
+    index++;
+    console.log(index)
+    if (index >= imgNuber) {index = 0}
+    imgcontainer.style.left = "-" +index*100+ "%"
+}
+function slider (index){
+    imgcontainer.style.left="-"+index*100+ "%"
+    const dotmau=document.querySelector('.mau')
+    dotmau.classList.remove("mau")
+    dotItem[index].classList.add("mau")
+}
+setInterval(imgslide,5000)
+</script>
+</html>    
+</html>
